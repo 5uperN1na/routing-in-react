@@ -19,7 +19,7 @@ class Locations extends Component{
         return (
            <div className="container">
             <div className="col-xs-12">
-            <h1>Locations!</h1>
+            <h1 className="text-center text-danger">Locations</h1>
             {this.state.locations.map((hamburgers) => (
               <div className="card">
                 <div className="card-body">

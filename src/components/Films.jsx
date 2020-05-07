@@ -20,7 +20,7 @@ class Films extends Component {
         return (
            <div className="container">
             <div className="col-xs-12">
-            <h1>Films!</h1>
+            <h1 className="text-center text-danger">Films</h1>
             {this.state.films.map((pizza) => (
               <div className="card">
                 <div className="card-body">

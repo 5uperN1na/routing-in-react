@@ -19,8 +19,10 @@ class People extends Component {
         return (
            <div className="container">
             <div className="col-xs-12">
-            <h1>People!</h1>
+            <h1 className="text-center text-danger">People</h1>
             {this.state.people.map((pasta) => (
+                
+
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">{pasta.name}</h5>
