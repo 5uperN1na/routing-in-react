@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Films extends Component {
     state = {
@@ -28,6 +28,7 @@ class Films extends Component {
                   <h6 className="card-subtitle mb-2 text-muted">
                   <span>{ pizza.release_date} </span>           
                   </h6>
+                  <Link to={`/Films/${pizza.id}`} className="btn btn-link">Get Film Details!</Link>
                 </div>
               </div>
             ))}
