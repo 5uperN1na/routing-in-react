@@ -1,70 +1,50 @@
 import React from 'react'
-import logo from './logo.png';
-import {Link} from 'react-router-dom';
+import logo from './logo-sm.png';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 function Header() {
     return (
         <header style={headerStyle}>
-            <p align="right">
+            <p align="center">
                 <img src={logo} className="App-logo" alt="logo" />
-            </p>
 
 
-    
-            <Link to="/">
+                <div>{' '}</div>
+                <div>{' '}</div>
+                <div>{' '}</div>
+
+                <Link to="/">
                     {' '}
-                    <Button variant="outline-secondary" size="sm">
-                            <span> Home</span>
-                        </Button>{' '}
-                       
-                    </Link>
+                    <Button variant="secondary" size="sm">
+                        <span > Home</span>
+                    </Button>{' '}
 
-                    <Link to="/Films">
-                    <Button variant="outline-secondary" size="sm">
-                            <span> Films</span>
-                        </Button>{' '}
-                    
-                    </Link>
-                  
-                    <Link to="/People">
-                    
-                    <Button variant="outline-secondary" size="sm">
-                            <span> People</span>
-                        </Button>{' '}
-                    
-                    </Link>
+                </Link>
 
-                    <Link to="/Locations">
-                    <Button variant="outline-secondary" size="sm">
-                            <span> Locations</span>
-                        </Button>{' '}
-                    
-                    
-                
-                    </Link>
+                <Link to="/Films">
+                    <Button variant="dark" size="sm">
+                        <span> Films</span>
+                    </Button>{' '}
 
+                </Link>
 
+                <Link to="/People">
 
+                    <Button variant="dark" size="sm">
+                        <span> People</span>
+                    </Button>{' '}
 
+                </Link>
 
+                <Link to="/Locations">
+                    <Button variant="dark" size="sm">
+                        <span> Locations</span>
+                    </Button>{' '}
 
+                </Link>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-
+            </p>
 
         </header>
 
@@ -73,10 +53,10 @@ function Header() {
 
 
 let headerStyle = {
-    background: '#FFC300',
+    background: '	#bdb298',
     color: 'black',
-    padding: '5px',
-    margin: '10px'
+    padding: '1px',
+    margin: '1px'
 
 }
 
